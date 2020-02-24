@@ -23,6 +23,11 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
       @content;
     }
   }
+  @if $breakpoint == desktop-lgxl {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  }
   @if $breakpoint == desktop-xl {
     @media (max-width: 1500px) {
       @content;
@@ -2478,6 +2483,7 @@ body {
         & a {
           height: 1.7rem;
           font-size: 1.4rem;
+          font-weight: bold;
           // color: #0077ff;
 
           @include respond(desktop-xl) {
@@ -3815,6 +3821,12 @@ body {
           border-radius: 8px;
           background-color: rgba($color: #c1c0c8, $alpha: 0.24);
 
+          &:first-child {
+           @include respond(desktop-lgxl) {
+            display: none!important;
+           }
+          }
+
           &-fill {
             position: absolute;
             bottom: 0;
@@ -4194,6 +4206,7 @@ body {
 
         & a {
           font-size: 1.4rem;
+          font-weight: bold;
         }
       }
 

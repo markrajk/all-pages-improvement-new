@@ -1609,7 +1609,8 @@ body {
               font-size: 1.62rem; } }
         .people-settings-body .feedback-from-header a, .people-settings-body .feedback-to-header a, .people-settings-body .feedback-boss-header a, .people-settings-body .feedback-team-header a, .people-settings-body .feedback-admin-header a {
           height: 1.7rem;
-          font-size: 1.4rem; }
+          font-size: 1.4rem;
+          font-weight: bold; }
           @media (max-width: 1500px) {
             .people-settings-body .feedback-from-header a, .people-settings-body .feedback-to-header a, .people-settings-body .feedback-boss-header a, .people-settings-body .feedback-team-header a, .people-settings-body .feedback-admin-header a {
               height: 1.53rem;
@@ -2515,6 +2516,9 @@ body {
           height: auto;
           border-radius: 8px;
           background-color: rgba(193, 192, 200, 0.24); }
+          @media (max-width: 1400px) {
+            .teams-results-favourites-body .graph-card-body .bar:first-child {
+              display: none !important; } }
           .teams-results-favourites-body .graph-card-body .bar-fill {
             position: absolute;
             bottom: 0;
@@ -2759,7 +2763,8 @@ body {
           letter-spacing: 0.12px;
           color: #1a173b; }
         .teams-settings-body .team-card-header a {
-          font-size: 1.4rem; }
+          font-size: 1.4rem;
+          font-weight: bold; }
       .teams-settings-body .team-card-member {
         margin-right: 3% !important; }
     .teams-settings-body .card-confirm {
