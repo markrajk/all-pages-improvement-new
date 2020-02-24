@@ -2447,13 +2447,11 @@ body {
       border-radius: 4px;
       border: solid 1.5px #eaebee;
       margin-bottom: 6%;
-      margin-right: 3%;
-      margin-left: 3%; }
+      margin-right: 6%; }
       @media (max-width: 1500px) {
         .teams-results-favourites-body .graph-card {
           margin-bottom: 3%;
-          margin-right: 1.5%;
-          margin-left: 1.5%; } }
+          margin-right: 3%; } }
       .teams-results-favourites-body .graph-card-footer {
         height: 7rem;
         border-top: 1.5px solid #eaebee; }
