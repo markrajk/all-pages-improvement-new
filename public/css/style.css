@@ -1579,7 +1579,8 @@ body {
     .people-settings-body .feedback-boss, .people-settings-body .feedback-team, .people-settings-body .feedback-admin {
       max-height: 15.7rem; }
     .people-settings-body .feedback-from, .people-settings-body .feedback-to, .people-settings-body .feedback-boss, .people-settings-body .feedback-team, .people-settings-body .feedback-admin {
-      border: solid 1.5px #eaebee; }
+      border: solid 1.5px #eaebee;
+      border-radius: 4px; }
       .people-settings-body .feedback-from-header, .people-settings-body .feedback-to-header, .people-settings-body .feedback-boss-header, .people-settings-body .feedback-team-header, .people-settings-body .feedback-admin-header {
         padding: 2.6rem;
         border-bottom: solid 1.5px #eaebee; }

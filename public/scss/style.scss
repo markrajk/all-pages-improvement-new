@@ -2445,9 +2445,11 @@ body {
     & .feedback-team,
     & .feedback-admin {
       border: solid 1.5px #eaebee;
+      border-radius: 4px;
       &-header {
         padding: 2.6rem;
         border-bottom: solid 1.5px #eaebee;
+
 
         @include respond(desktop-xl) {
           padding: resize(2.7) * 1rem;
