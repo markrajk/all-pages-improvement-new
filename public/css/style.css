@@ -2445,6 +2445,12 @@ body {
       @media (max-width: 1500px) {
         .teams-results-favourites-body .row {
           margin-right: -1%; } }
+      @media (max-width: 1199px) {
+        .teams-results-favourites-body .row {
+          margin-right: -1.5%; } }
+      @media (max-width: 767px) {
+        .teams-results-favourites-body .row {
+          margin-right: -3%; } }
     .teams-results-favourites-body .graph-card {
       min-height: 36rem;
       height: 100%;

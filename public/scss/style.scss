@@ -3725,6 +3725,14 @@ body {
       @include respond(desktop-xl) {
         margin-right: -1%;
       }
+
+      @include respond(desktop-lg) {
+        margin-right: -1.5%;
+      }
+
+      @include respond(desktop-sm) {
+        margin-right: -3%;
+      }
     }
 
     & .graph-card {
