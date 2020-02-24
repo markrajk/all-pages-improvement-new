@@ -2441,9 +2441,9 @@ body {
   .teams-results-favourites-body {
     font-family: "Lato", sans-serif; }
     .teams-results-favourites-body .graph-card {
-      min-height: 36.44rem;
+      min-height: 36rem;
       height: 100%;
-      max-height: 36.44rem;
+      max-height: 36rem;
       border-radius: 4px;
       border: solid 1.5px #eaebee;
       margin-bottom: 3%;
