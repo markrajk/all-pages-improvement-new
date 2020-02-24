@@ -3720,6 +3720,13 @@ body {
   &-body {
     font-family: "Lato", sans-serif;
 
+    & .row {
+      margin-right: -2%;
+      @include respond(desktop-xl) {
+        margin-right: -1%;
+      }
+    }
+
     & .graph-card {
       min-height: 36rem;
       height: 100%;

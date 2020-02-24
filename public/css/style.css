@@ -2440,6 +2440,11 @@ body {
   padding: 0 4.6rem 0 3.4rem; }
   .teams-results-favourites-body {
     font-family: "Lato", sans-serif; }
+    .teams-results-favourites-body .row {
+      margin-right: -2%; }
+      @media (max-width: 1500px) {
+        .teams-results-favourites-body .row {
+          margin-right: -1%; } }
     .teams-results-favourites-body .graph-card {
       min-height: 36rem;
       height: 100%;
