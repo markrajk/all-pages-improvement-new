@@ -2588,7 +2588,7 @@ body {
         letter-spacing: 0.35px;
         color: #0077ff;
         border-radius: 4px;
-        border: solid 2px #0077ff;
+        border: solid 1.5px #0077ff;
         text-decoration: none; }
         .teams-settings-body .team-name a.btn-custom-outline:hover, .teams-settings-body .category a.btn-custom-outline:hover {
           background-color: #0077ff;
@@ -2599,7 +2599,7 @@ body {
           .teams-settings-body .team-name a.btn-custom-outline.active:hover, .teams-settings-body .category a.btn-custom-outline.active:hover {
             background-color: #fff;
             color: #0077ff;
-            border: solid 2px #0077ff; }
+            border: solid 1.5px #0077ff; }
       .teams-settings-body .team-name label, .teams-settings-body .category label {
         margin-right: 2.9rem;
         font-size: 1.9rem;
@@ -2713,19 +2713,16 @@ body {
                 font-size: 1.2rem;
                 color: #5e636b; }
     .teams-settings-body .team-table-member {
-      min-height: 27rem;
       height: 100%;
       max-height: calc(100vh - 53rem);
       overflow-y: auto; }
     .teams-settings-body .team-table-admin {
-      min-height: 7.6rem;
       height: 100%;
       max-height: calc(100vh - 53rem - 13rem - 6rem);
       overflow-y: auto; }
       .teams-settings-body .team-table-admin a {
         color: #ff3e3e; }
     .teams-settings-body .team-table-lead {
-      min-height: 3.6rem;
       height: 100%;
       max-height: 7.6rem;
       overflow-y: auto; }
