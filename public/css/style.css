@@ -3608,72 +3608,71 @@ body {
         .admin-company-profile-main-bottom-header a {
           font-size: 1.4rem; }
 
-.admin-company-profile {
-  font-family: "Lato", sans-serif; }
-  .admin-company-profile-top {
-    max-width: 93rem;
+.admin-company-profile-top {
+  font-family: "Lato", sans-serif;
+  max-width: 93rem;
+  padding: 2.6rem;
+  background-color: #FFF;
+  padding-bottom: 1.4rem;
+  border-radius: 4px;
+  border: solid 1.5px #eaebee; }
+  .admin-company-profile-top h2 {
+    margin-bottom: 4rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #1a173b; }
+  .admin-company-profile-top .all-input {
+    display: flex;
+    flex-wrap: wrap; }
+    .admin-company-profile-top .all-input .input {
+      margin-right: 3rem;
+      margin-bottom: 3rem; }
+      .admin-company-profile-top .all-input .input input {
+        padding: 1.6rem;
+        width: 26rem;
+        height: 4.7rem;
+        font-size: 1.5rem;
+        color: #000;
+        border-radius: 4px;
+        border: none;
+        background-color: rgba(239, 239, 239, 0.53); }
+        .admin-company-profile-top .all-input .input input::placeholder {
+          font-size: 1.5rem;
+          font-weight: normal;
+          color: #a8a7a7; }
+      .admin-company-profile-top .all-input .input label {
+        margin-bottom: 1rem;
+        display: block;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #3e3e3e; }
+.admin-company-profile-bottom {
+  max-width: 61rem;
+  margin-top: 2.2rem;
+  background-color: #FFF;
+  border-radius: 4px;
+  border: solid 1.5px #eaebee; }
+  .admin-company-profile-bottom table td, .admin-company-profile-bottom th {
+    font-size: 1.3rem; }
+  .admin-company-profile-bottom table.table.flex-table {
+    margin-bottom: 0; }
+  .admin-company-profile-bottom table tbody {
+    max-height: 15.5rem !important;
+    overflow-y: auto; }
+    .admin-company-profile-bottom table tbody tr {
+      height: 3.9rem; }
+  .admin-company-profile-bottom-header {
     padding: 2.6rem;
-    background-color: #FFF;
-    padding-bottom: 1.4rem;
-    border-radius: 4px;
-    border: solid 1.5px #eaebee; }
-    .admin-company-profile-top h2 {
-      margin-bottom: 4rem;
+    padding-bottom: 1rem; }
+    .admin-company-profile-bottom-header h2 {
       font-size: 1.9rem;
       font-weight: 700;
       color: #1a173b; }
-    .admin-company-profile-top .all-input {
-      display: flex;
-      flex-wrap: wrap; }
-      .admin-company-profile-top .all-input .input {
-        margin-right: 3rem;
-        margin-bottom: 3rem; }
-        .admin-company-profile-top .all-input .input input {
-          padding: 1.6rem;
-          width: 26rem;
-          height: 4.7rem;
-          font-size: 1.5rem;
-          color: #000;
-          border-radius: 4px;
-          border: none;
-          background-color: rgba(239, 239, 239, 0.53); }
-          .admin-company-profile-top .all-input .input input::placeholder {
-            font-size: 1.5rem;
-            font-weight: normal;
-            color: #a8a7a7; }
-        .admin-company-profile-top .all-input .input label {
-          margin-bottom: 1rem;
-          display: block;
-          font-size: 1.1rem;
-          font-weight: 700;
-          color: #3e3e3e; }
-  .admin-company-profile-bottom {
-    max-width: 61rem;
-    margin-top: 2.2rem;
-    background-color: #FFF;
-    border-radius: 4px;
-    border: solid 1.5px #eaebee; }
-    .admin-company-profile-bottom table td, .admin-company-profile-bottom th {
-      font-size: 1.3rem; }
-    .admin-company-profile-bottom table.table.flex-table {
-      margin-bottom: 0; }
-    .admin-company-profile-bottom table tbody {
-      max-height: 15.5rem !important;
-      overflow-y: auto; }
-      .admin-company-profile-bottom table tbody tr {
-        height: 3.9rem; }
-    .admin-company-profile-bottom-header {
-      padding: 2.6rem;
-      padding-bottom: 1rem; }
-      .admin-company-profile-bottom-header h2 {
-        font-size: 1.9rem;
-        font-weight: 700;
-        color: #1a173b; }
-        .admin-company-profile-bottom-header h2 span {
-          margin-left: .5rem;
-          font-weight: normal; }
-      .admin-company-profile-bottom-header a {
-        font-size: 1.4rem; }
+      .admin-company-profile-bottom-header h2 span {
+        margin-left: .5rem;
+        font-weight: normal; }
+    .admin-company-profile-bottom-header a {
+      font-size: 1.4rem; }
 
 .todo-list {
   font-family: "Open Sans", sans-serif;
