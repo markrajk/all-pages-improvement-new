@@ -954,6 +954,7 @@ body {
         position: absolute;
         top: 74%;
         left: 0;
+        color: rgba(0,0,0, .7);
         transform: translate(50%, -50%);
       }
 
@@ -4949,7 +4950,7 @@ body {
         display: block;
         font-size: 1.1rem;
         font-weight: bold;
-        text-transform: uppercase;
+        //text-transform: uppercase;
       }
     }
   }
@@ -5393,7 +5394,7 @@ body {
             font-size: 1.1rem;
             font-weight: 700;
             color: #3e3e3e;
-            text-transform: uppercase;
+            //text-transform: uppercase;
           }
         }
       }
@@ -5499,7 +5500,7 @@ body {
           font-size: 1.1rem;
           font-weight: 700;
           color: #3e3e3e;
-          text-transform: uppercase;
+          //text-transform: uppercase;
         }
       }
     }

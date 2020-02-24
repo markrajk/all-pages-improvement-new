@@ -596,6 +596,7 @@ body {
         position: absolute;
         top: 74%;
         left: 0;
+        color: rgba(0, 0, 0, 0.7);
         transform: translate(50%, -50%); }
       .people-export-body .input .i-2 {
         color: #62e872;
@@ -3263,8 +3264,7 @@ body {
           margin-bottom: 1rem;
           display: block;
           font-size: 1.1rem;
-          font-weight: bold;
-          text-transform: uppercase; }
+          font-weight: bold; }
 
 .admin-team-register {
   position: relative;
@@ -3579,8 +3579,7 @@ body {
             display: block;
             font-size: 1.1rem;
             font-weight: 700;
-            color: #3e3e3e;
-            text-transform: uppercase; }
+            color: #3e3e3e; }
     .admin-company-profile-main-bottom {
       max-width: 61rem;
       margin-top: 2.2rem;
@@ -3647,8 +3646,7 @@ body {
           display: block;
           font-size: 1.1rem;
           font-weight: 700;
-          color: #3e3e3e;
-          text-transform: uppercase; }
+          color: #3e3e3e; }
   .admin-company-profile-bottom {
     max-width: 61rem;
     margin-top: 2.2rem;
