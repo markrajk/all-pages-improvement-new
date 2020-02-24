@@ -3726,9 +3726,15 @@ body {
       max-height: 36rem;
       border-radius: 4px;
       border: solid 1.5px #eaebee;
-      margin-bottom: 3%;
-      margin-right: 1.5%;
-      margin-left: 1.5%;
+      margin-bottom: 6%;
+      margin-right: 3%;
+      margin-left: 3%;
+
+      @include respond(desktop-xl) {
+        margin-bottom: 3%;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+      }
 
       &-footer {
         height: 7rem;
