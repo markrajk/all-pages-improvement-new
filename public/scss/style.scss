@@ -177,8 +177,12 @@ body {
   &-group {
     padding-top: 4rem;
 
+    @include respond(desktop-xl) {
+      padding-top: 3.5rem;
+    }
+
     @include respond(desktop-lg) {
-      padding-top: 3.2rem;
+      padding-top: 3rem;
     }
 
     &:last-of-type {
@@ -219,14 +223,18 @@ body {
         & a {
           display: inline-block;
           height: 1.8rem;
-          margin-top: 1.7rem;
+          margin-top: 1.5rem;
           text-decoration: none;
           font-size: 1.3rem;
           line-height: 1.69;
           color: #002257;
 
+          @include respond(desktop-xl) {
+            margin-top: 1.3rem;
+          }
+
           @include respond(desktop-lg) {
-            margin-top: 1.5rem;
+            margin-top: 1.1rem;
           }
         }
 
