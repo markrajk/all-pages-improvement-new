@@ -1075,6 +1075,7 @@ body {
             border-color: #eaebee;
             background-color: #f4faff; }
             .people-results-key-people-body-left .people .list-group-item.active .active-link p {
+              font-size: 1.35rem;
               margin-bottom: 0 !important;
               margin-right: 2px;
               text-align: center; }
