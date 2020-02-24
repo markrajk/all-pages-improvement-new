@@ -197,9 +197,25 @@
                         <div class="graph-card-header d-flex justify-content-between">
                            <div>
                             <h3 class="text-truncate mr-2"><span>Jess Gregory's</span> development</h3>
-                            <p class="choose"><a href="#">Weeks</a><span class="mx-2"> I </span> <span class="active"><a href="#">Months</a></span> </p>
+                            <div class="options">
+                                <a href="#">Weeks</a>
+                                <span class="divider">I</span>
+                                <a href="#" class="active">Months</a>
+                            </div>
                            </div>
-                           <a class="share" href="#">Average<i class="material-icons align-middle ml-1">keyboard_arrow_down</i></a>
+                           
+                           <div class="dropdown custom-dd-link">
+                            <a href="#" class="custom-dd-btn" id="dropdownMenuButton01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Average
+                                <i class="material-icons align-middle">keyboard_arrow_down</i>
+                            </a> 
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton01">
+                                <a class="dropdown-item" href="#">Average</a>
+                                <a class="dropdown-item" href="#">Option I</a>
+                                <a class="dropdown-item" href="#">Option II</a>
+                            </div>
+                        </div>
+
                         </div>
                         <div class="graph-card-body">
                             <div class="bar d-none d-xl-block">
@@ -257,12 +273,23 @@
                 <div class="people-results-key-people-body-right-bottom">
                         <div class="right-container">
                             <div class="people-results-key-people-body-right-bottom-header">
-                                <p class="choose text-truncate mr-2"><span class="active"><a href="#">Improvement Ideas</a></span><span class="mx-2"> I </span><a href="#">Compliments</a></p>
-                                <select name="comment" id="comment">
-                                    <option value="april" selected>April</option>
-                                    <option value="april">May</option>
-                                    <option value="april">Jun</option>
-                                </select>
+                                <div class="options">
+                                    <a href="./people-results-key-people/index.html" class="active">Improvement Ideas</a>
+                                    <span class="divider">I</span>
+                                    <a href="./people-results-all-people/index.html">Compliments</a>
+                                </div>
+                                
+                                <div class="dropdown custom-dd-link">
+                                    <a href="#" class="custom-dd-btn" id="dropdownMenuButton02" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">April
+                                        <i class="material-icons align-middle">keyboard_arrow_down</i>
+                                    </a> 
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton02">
+                                        <a class="dropdown-item" href="#">April</a>
+                                        <a class="dropdown-item" href="#">May</a>
+                                        <a class="dropdown-item" href="#">Jun</a>
+                                    </div>
+                                </div>
 
                                 <!-- <a class="share" href="#">April<i class="material-icons align-middle ml-1">keyboard_arrow_down</i></a> -->
                             </div>

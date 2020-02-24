@@ -67,7 +67,7 @@ body {
         padding-top: 3.2rem; } }
     .sidebar-group:last-of-type {
       margin-bottom: 2rem; }
-    .sidebar-group:nth-child(1), .sidebar-group:nth-child(2) {
+    .sidebar-group:nth-child(2), .sidebar-group:nth-child(3) {
       padding-top: 3.5rem; }
     .sidebar-group .list-unstyled {
       margin: 0; }
@@ -1076,6 +1076,7 @@ body {
             background-color: #f4faff; }
             .people-results-key-people-body-left .people .list-group-item.active .active-link p {
               font-size: 1.35rem;
+              font-weight: 300;
               margin-bottom: 0 !important;
               margin-right: 2px;
               text-align: center; }
