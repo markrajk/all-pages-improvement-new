@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Give feedback</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nunito+Sans:300,400|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e9f50f9a1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    
+    <!-- MAIN WRAPPER -->
+    <main class="main d-flex">
+
+        <!-- SIDEBAR SECTION-->
+        <div class="sidebar d-flex flex-column bg-white">
+            <div class="sidebar-info d-flex align-items-center">
+                <img class="sidebar-info-img" src="../public/img/profile-pic.png" alt="profile picture">
+                <div class="d-flex flex-column">
+                    <p class="sidebar-info-name m-0">Andrew<span class="align-middle"></span></p>
+                    <p class="sidebar-info-title m-0">Boss</p>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>GIVE FEEDBACK</h3>
+                <a href="../give-feedback-menu/index.html" class="btn-custom-feedback">Click Here</a>
+            </div>
+
+            <div class="sidebar-body">
+                <div class="sidebar-group">
+                    <h3>TEAMS</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../teams-results-favourites/index.html">Results </a></li>
+                        <li><a href="../teams-export/index.html">Export results </a></li>
+                        <li><a href="../teams-setting/index.html">Manage teams </a></li>
+                        <li><a href="../teams-create-new/index.html">Create a new team </a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-group">
+                    <h3>PEOPLE</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../people-results-key-people/index.html">Results </a></li>
+                        <li><a href="../people-export/index.html">Export results </a></li>
+                        <li><a href="../people-settings/index.html">Manage people</a></li>
+                        <li><a href="../people-invite/index.html">Invite new people </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>ME</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../me-results/index.html">Results </a></li>
+                        <li><a href="../me-my-account/index.html">My account </a></li>
+                    </ul>
+                </div>
+    
+                <div class="sidebar-group">
+                    <h3>ADMIN</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="../admin-user-register/index.html">User/team register </a></li>
+                        <li><a href="../admin-company-profile/index.html">Company Profile </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- RESULTS SECTION -->
+        <div class="give-feedback-to-all-people">
+
+            <div class="header">
+                <div class="header-top">
+                    <a class="header-top-small" href="#">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                    Back</a>
+                    <div class="header-top-logout">
+                        <a href="../people-signin/index.html">Logout
+                            <i class="material-icons align-middle">exit_to_app</i>
+                        </a>
+                    </div>
+                </div>
+                <h2>Give feedback</h2>
+                <div class="header-bot">
+                    <h3>To all my employees</h3>
+                </div>
+            </div>
+
+            <div class="give-feedback-to-all-people-body">
+                <div class="employee bg-white">
+                    <div class="employee-header">
+                        <div class="employee-header-info d-flex justify-content-between align-items-center">
+                            <div class="personal-info d-flex align-items-center">
+                                <img src="../public/img/p-07.png" alt="#">
+                                <p class="name mb-0">Rebeca Lee</p>
+                            </div>
+                            <div class="score d-flex align-items-center justify-content-center"><span>1/12</span></div>
+                        </div>
+                        
+                        <span class="separator-line"></span>
+
+                        <div class="rating d-flex align-items-center">
+                            <p class=" align-middle">Great</p>
+
+                            <div class="stars">
+                                <input type="radio" name="star" id="star1">
+                                <label for="star1"></label>
+
+                                <input type="radio" name="star" id="star2">
+                                <label for="star2"></label>
+
+                                <input type="radio" name="star" id="star3">
+                                <label for="star3"></label>
+
+                                <input type="radio" name="star" id="star4">
+                                <label for="star4"></label>
+
+                                <input type="radio" name="star" id="star5">
+                                <label for="star5"></label>
+                            </div>
+
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Drag and drop image or enter text"></textarea>
+                        </div>
+
+                        <button class="btn-custom-confirm">Confirm <i class="material-icons">arrow_forward</i></button>
+                        <p>
+                            <a href="#">Back to previous</a>
+                        </p>
+                    </div>
+                    <div class="employee-body"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/main.js"></script>
+
+    <script>
+        $('.your-checkbox').prop('indeterminate', true)
+    </script>
+</body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahsboard | Admin team register</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nunito:300,400|Open+Sans:400,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <!-- MAIN WRAPPER -->
+    <main class="main d-flex">
+
+       <!-- SIDEBAR SECTION-->
+       <div class="sidebar d-flex flex-column bg-white">
+        <div class="sidebar-info d-flex align-items-center">
+            <img class="sidebar-info-img" src="../public/img/profile-pic.png" alt="profile picture">
+            <div class="d-flex flex-column">
+                <p class="sidebar-info-name m-0">Andrew<span class="align-middle"></span></p>
+                <p class="sidebar-info-title m-0">Boss</p>
+            </div>
+        </div>
+
+        <div class="sidebar-group">
+            <h3>GIVE FEEDBACK</h3>
+            <a href="../give-feedback-menu/index.html" class="btn-custom-feedback">Click Here</a>
+        </div>
+
+        <div class="sidebar-body">
+            <div class="sidebar-group">
+                <h3>TEAMS</h3>
+                <ul class="list-unstyled">
+                    <li><a href="../teams-results-favourites/index.html">Results </a></li>
+                    <li><a href="../teams-export/index.html">Export results </a></li>
+                    <li><a href="../teams-setting/index.html">Manage teams </a></li>
+                    <li><a href="../teams-create-new/index.html">Create a new team </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>PEOPLE</h3>
+                <ul class="list-unstyled">
+                    <li><a href="../people-results-key-people/index.html">Results </a></li>
+                    <li><a href="../people-export/index.html">Export results </a></li>
+                    <li><a href="../people-settings/index.html">Manage people</a></li>
+                    <li><a href="../people-invite/index.html">Invite new people </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>ME</h3>
+                <ul class="list-unstyled">
+                    <li><a href="../me-results/index.html">Results </a></li>
+                    <li><a href="../me-my-account/index.html">My account </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>ADMIN</h3>
+                <ul class="list-unstyled">
+                    <li class="active"><a href="../admin-user-register/index.html">User/team register </a></li>
+                    <li><a href="../admin-company-profile/index.html">Company Profile </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <!-- RESULTS SECTION -->
+        <div class="admin-team-register">
+
+            <div class="header">
+                <div class="header-top">
+                    <a class="header-top-small" href="#">Admin</a>
+                    <div class="header-top-logout">
+                        <a href="../people-signin/index.html">Logout
+                            <i class="material-icons align-middle">exit_to_app</i>
+                        </a>
+                    </div>
+                </div>
+                <h2>Registers</h2>
+                <div class="header-bot">
+                    <div class="options">
+                        <a href="../admin-user-register/index.html">User register</a>
+                        <span class="divider">I</span>
+                        <a href="../admin-team-register/index.html" class="active">Team register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-team-register-body">
+ 
+                
+                <div class="h3 d-flex">
+                    <h3>All teams of our company</h3>
+                </div>
+                
+
+                <div class="inputs d-flex justify-content-between">
+                    <div class="d-flex">
+                        <div class="search">
+                            <i class="material-icons">search</i>
+                            <input class="m-auto" type="text" placeholder="Search...">
+                        </div>
+                        <div class="select d-none d-md-block">
+                            <select name="category" id="category">
+                                <option value="1" selected>All categories</option>
+                                <option value="2" selected>All categories</option>
+                                <option value="3" selected>All categories</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- TABLE SECTION -->
+                    <div class="row table-row">
+                      <div class="col-sm-12">    
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <table class="table flex-table">
+                              <thead>
+                                <tr>
+                                    <th class="spacer-left"></th>
+                                    <th class="checkbox"></th>
+                                    <th class="team-name">Name of team</th>
+                                    <th class="team-size d-none d-lg-flex"><a href="#"><i class="material-icons align-middle">arrow_downward</i></a> Team size</th>
+                                    <th class="team-lead-name d-none d-xl-flex">Team lead</th>
+                                    <th class="team-index  d-none d-md-flex">Team lead's email</th>
+                                    <th class="team-lead-rating">Commands</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Martketing</td>
+                                    <td class="team-size d-none d-lg-flex">20</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Jonas Walter</td>
+                                    <td class="team-index  d-none d-md-flex">john.walter@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <button class="btn-table btn-table-green mr-3">Confirm</button>
+                                        <button class="btn-table btn-table-red">Deny</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Sales</td>
+                                    <td class="team-size d-none d-lg-flex">24</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Betrich Smetana</td>
+                                    <td class="team-index  d-none d-md-flex">betrichs@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <button class="btn-table btn-table-green mr-3">Confirm</button>
+                                        <button class="btn-table btn-table-red">Deny</button>
+                                    </td>
+                                </tr>
+
+                                <tr class="active">
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" checked />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Frontend</td>
+                                    <td class="team-size d-none d-lg-flex">24</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Jili Bowow</td>
+                                    <td class="team-index  d-none d-md-flex">jili@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Backend</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Lorem ipsum</td>
+                                    <td class="team-index  d-none d-md-flex">loremipsum@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Human Resource</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Angelo White</td>
+                                    <td class="team-index  d-none d-md-flex">angelo.white@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr class="active">
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" checked />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Frontend</td>
+                                    <td class="team-size d-none d-lg-flex">24</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Jili Bowow</td>
+                                    <td class="team-index  d-none d-md-flex">jili@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Backend</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Lorem ipsum</td>
+                                    <td class="team-index  d-none d-md-flex">loremipsum@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Human Resource</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Angelo White</td>
+                                    <td class="team-index  d-none d-md-flex">angelo.white@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr class="active">
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" checked />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Frontend</td>
+                                    <td class="team-size d-none d-lg-flex">24</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Jili Bowow</td>
+                                    <td class="team-index  d-none d-md-flex">jili@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Backend</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Lorem ipsum</td>
+                                    <td class="team-index  d-none d-md-flex">loremipsum@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Human Resource</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Angelo White</td>
+                                    <td class="team-index  d-none d-md-flex">angelo.white@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Backend</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Lorem ipsum</td>
+                                    <td class="team-index  d-none d-md-flex">loremipsum@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Human Resource</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Angelo White</td>
+                                    <td class="team-index  d-none d-md-flex">angelo.white@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Backend</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Lorem ipsum</td>
+                                    <td class="team-index  d-none d-md-flex">loremipsum@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Human Resource</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Angelo White</td>
+                                    <td class="team-index  d-none d-md-flex">angelo.white@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Backend</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Lorem ipsum</td>
+                                    <td class="team-index  d-none d-md-flex">loremipsum@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Human Resource</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Angelo White</td>
+                                    <td class="team-index  d-none d-md-flex">angelo.white@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Backend</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Lorem ipsum</td>
+                                    <td class="team-index  d-none d-md-flex">loremipsum@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="spacer-left"></td>
+                                    <td class="checkbox">
+                                        <div class="pretty p-svg p-curve">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <!-- svg path -->
+                                                <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                                    <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                                </svg>
+                                                <label></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="team-name">Human Resource</td>
+                                    <td class="team-size d-none d-lg-flex">16</td>
+                                    <td class="team-lead-name d-none d-xl-flex">Angelo White</td>
+                                    <td class="team-index  d-none d-md-flex">angelo.white@gmail.com</td>
+                                    <td class="team-lead-rating">
+                                        <a href="../teams-setting/index.html">Edit team</a>
+                                    </td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>      
+                      </div>
+                    </div>
+                <!-- <div class="table-footer"></div> -->
+                <div class="table-footer bg-white d-flex justify-content-end align-items-center">
+                    <p class="align-middle d-none d-md-block mr-4">Rows per page <span class="ml-2">20</span></p>
+
+                    <p class="align-middle mx-5">page <span class="mx-1">1</span> of <span class="mx-1">1</span></p>
+                    <div>
+                        <a href="#"><i class="material-icons text-left align-middle disabled">keyboard_arrow_left</i></a>
+                        <a href="#"><i class="material-icons text-right align-middle ml-2">keyboard_arrow_right</i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/main.js"></script>
+
+    <script>
+    //     const isOverflown = (clientHeight, scrollHeight) => {
+    //         return scrollHeight > clientHeight;
+    //     }
+        
+
+    //    const onResize = () => {
+    //         let bool = isOverflown(document.querySelector('.table').clientHeight, document.querySelector('.table').scrollHeight);
+    //         if(bool) {
+    //             document.querySelector('thead').style.width = 'calc(100% - 1.7rem)';
+    //         } else {
+    //             document.querySelector('thead').style.width = 'calc(100%)'
+    //         }
+    //    }
+    //    onResize()
+
+    //     window.addEventListener("resize", onResize);
+    </script>
+</body>
+
+</html>

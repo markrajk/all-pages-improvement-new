@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | Team profile | Team lead</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    <main class="d-flex">
+<!-- SIDEBAR SECTION-->
+<div class="sidebar d-flex flex-column bg-white">
+    <div class="sidebar-info d-flex align-items-center">
+        <img class="sidebar-info-img" src="../public/img/profile-pic.png" alt="profile picture">
+        <div class="d-flex flex-column">
+            <p class="sidebar-info-name m-0">Andrew<span class="align-middle"></span></p>
+            <p class="sidebar-info-title m-0">Boss</p>
+        </div>
+    </div>
+
+    <div class="sidebar-group">
+        <h3>GIVE FEEDBACK</h3>
+        <a href="../give-feedback-menu/index.html" class="btn-custom-feedback">Click Here</a>
+    </div>
+
+    <div class="sidebar-body">
+        <div class="sidebar-group">
+            <h3>TEAMS</h3>
+            <ul class="list-unstyled">
+                <li class="active"><a href="../teams-results-favourites/index.html">Results </a></li>
+                <li><a href="../teams-export/index.html">Export results </a></li>
+                <li><a href="../teams-setting/index.html">Manage teams </a></li>
+                <li><a href="../teams-create-new/index.html">Create a new team </a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-group">
+            <h3>PEOPLE</h3>
+            <ul class="list-unstyled">
+                <li><a href="../people-results-key-people/index.html">Results </a></li>
+                <li><a href="../people-export/index.html">Export results </a></li>
+                <li><a href="../people-settings/index.html">Manage people</a></li>
+                <li><a href="../people-invite/index.html">Invite new people </a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-group">
+            <h3>ME</h3>
+            <ul class="list-unstyled">
+                <li><a href="../me-results/index.html">Results </a></li>
+                <li><a href="../me-my-account/index.html">My account </a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-group">
+            <h3>ADMIN</h3>
+            <ul class="list-unstyled">
+                <li><a href="../admin-user-register/index.html">User/team register </a></li>
+                <li><a href="../admin-company-profile/index.html">Company Profile </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!-- RESULTS SECTION -->
+    <div class="teams-results-example-team-lead">
+        
+        <div class="header">
+            <div class="header-top">
+                <a class="header-top-small" href="../teams-results-favourites/index.html">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                    Back to overview</a>
+                <div class="header-top-logout">
+                    <a href="../people-signin/index.html">Logout
+                        <i class="material-icons align-middle">exit_to_app</i>
+                    </a>
+                </div>
+            </div>
+            <h2>Team Marketing</h2>
+            <div class="header-bot">
+                <div class="options">
+                    <a href="../teams-results-example/index.html">Team</a>
+                    <span class="divider">I</span>
+                    <a href="../teams-results-example-team-lead/index.html" class="active">Team lead</a>
+                    <span class="divider">I</span>
+                    <a href="../teams-results-example-people/index.html">People</a>
+                </div>
+
+                <div>
+                    <div class="buttons d-none d-lg-block">
+                        <a href="../teams-export/index.html" class="btn-custom-blue">Export</a>
+                        <a href="../teams-setting/index.html" class="btn-custom-blue">Edit teams</a>
+                        <a href="#" class="btn-custom-blue">Add to my favourites</a>
+                    </div>
+                    <div class="icons d-sm-block d-lg-none">
+                        <a href="#"><i class="material-icons archive">save_alt</i></a>
+                        <a href="#"><i class="material-icons settings">settings</i></a>
+                        <a href="#"><i class="material-icons add">person_add</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="teams-results-example-team-lead-body">
+            <div class="teams-results-example-team-lead-body-left">
+                <div class="teams-results-example-team-lead-body-left-top">
+                    <div class="graph-card bg-white graph-team-marketing">
+                        <div class="graph-card-header d-flex justify-content-between">
+                           <div>
+                            <h3 class="text-truncate mr-2"><span>Colleagues feedback</span></h3>
+                            <div class="options">
+                                <a href="#">Weeks</a>
+                                <span class="divider">I</span>
+                                <a href="#" class="active">Months</a>
+                            </div>
+                           </div>
+                           <div class="dropdown custom-dd-link">
+                            <a href="#" class="custom-dd-btn" id="dropdownMenuButton01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Export
+                                <i class="material-icons align-middle">keyboard_arrow_down</i>
+                            </a> 
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton01">
+                                <a class="dropdown-item" href="#">Export</a>
+                                <a class="dropdown-item" href="#">Option I</a>
+                                <a class="dropdown-item" href="#">Option II</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="graph-card-body">
+                            <div class="bar d-none d-xl-block">
+                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                <div class="bar-info">JAN</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                <div class="bar-info">FEB</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">MAR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">APR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                <div class="bar-info">MAY</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">JUN</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                <div class="bar-info">JUL</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">AUG</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 76%;"></div>
+                                <div class="bar-info">SEP</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                <div class="bar-info">OCT</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">NOV</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teams-results-example-team-lead-body-left-bottom">
+                        <div class="right-container">
+                            <div class="teams-results-example-team-lead-body-left-bottom-header">
+                                <p class="choose text-truncate mr-2"><span class="active"><a href="#">Improvement Ideas</a></span></p>
+                                <div class="dropdown custom-dd-link">
+                                    <a href="#" class="custom-dd-btn" id="dropdownMenuButton02" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">April
+                                        <i class="material-icons align-middle">keyboard_arrow_down</i>
+                                    </a> 
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton02">
+                                        <a class="dropdown-item" href="#">April</a>
+                                        <a class="dropdown-item" href="#">May</a>
+                                        <a class="dropdown-item" href="#">Jun</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teams-results-example-team-lead-body-left-bottom-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        I think the best solution is to kill our enemies first and then start our launch.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores delectus, aliquam autem possimus deleniti ipsum officia minus ratione iure?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid error libero in dignissimos sapiente voluptatem?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad laboriosam repudiandae deserunt molestiae blanditiis nisi nobis labore quasi beatae sequi officiis, velit tempore aliquid.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem, ipsum dolor.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, maxime dolor blanditiis suscipit vitae commodi beatae. Officiis, beatae?
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="teams-results-example-team-lead-body-right">
+                <div class="teams-results-example-team-lead-body-right-top">
+                    <div class="graph-card bg-white graph-team-marketing">
+                        <div class="graph-card-header d-flex justify-content-between">
+                           <div>
+                            <h3 class="text-truncate mr-2"><span>Bosses feedback</span></h3>
+                            <div class="options">
+                                <a href="#">Weeks</a>
+                                <span class="divider">I</span>
+                                <a href="#" class="active">Months</a>
+                            </div>
+                           </div>
+
+                           <div class="dropdown custom-dd-link">
+                            <a href="#" class="custom-dd-btn" id="dropdownMenuButton03" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Export
+                                <i class="material-icons align-middle">keyboard_arrow_down</i>
+                            </a> 
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton03">
+                                <a class="dropdown-item" href="#">Export</a>
+                                <a class="dropdown-item" href="#">Option I</a>
+                                <a class="dropdown-item" href="#">Option II</a>
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="graph-card-body">
+                            <div class="bar d-none d-xl-block">
+                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                <div class="bar-info">JAN</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                <div class="bar-info">FEB</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">MAR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">APR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                <div class="bar-info">MAY</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">JUN</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                <div class="bar-info">JUL</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">AUG</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 76%;"></div>
+                                <div class="bar-info">SEP</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                <div class="bar-info">OCT</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">NOV</div>
+                            </div>
+                            <!-- <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">DEC</div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teams-results-example-team-lead-body-right-bottom">
+                        <div class="right-container">
+                            <div class="teams-results-example-team-lead-body-right-bottom-header">
+                                <p class="choose text-truncate mr-2"><span class="active"><a href="#">Compliments</a></span></p>
+
+                                <div class="dropdown custom-dd-link">
+                                    <a href="#" class="custom-dd-btn" id="dropdownMenuButton04" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">April
+                                        <i class="material-icons align-middle">keyboard_arrow_down</i>
+                                    </a> 
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton04">
+                                        <a class="dropdown-item" href="#">April</a>
+                                        <a class="dropdown-item" href="#">May</a>
+                                        <a class="dropdown-item" href="#">Jun</a>
+                                    </div>
+                                </div>
+
+                                <!-- <a class="share" href="#">April<i class="material-icons align-middle ml-1">keyboard_arrow_down</i></a> -->
+                            </div>
+                            <div class="teams-results-example-team-lead-body-right-bottom-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        I think the best solution is to kill our enemies first and then start our launch.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores delectus, aliquam autem possimus deleniti ipsum officia minus ratione iure?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid error libero in dignissimos sapiente voluptatem?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad laboriosam repudiandae deserunt molestiae blanditiis nisi nobis labore quasi beatae sequi officiis, velit tempore aliquid.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem, ipsum dolor.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, maxime dolor blanditiis suscipit vitae commodi beatae. Officiis, beatae?
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="../public/js/jquery-3.4.1.min.js"></script>
+<script src="../public/js/bootstrap.bundle.min.js"></script>
+<script src="../public/js/main.js"></script>
+</body>
+</html>

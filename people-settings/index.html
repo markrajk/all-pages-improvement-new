@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Manage people's settings</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nunito+Sans:300,400|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    
+    <!-- MAIN WRAPPER -->
+    <main class="main d-flex">
+
+         <!-- SIDEBAR SECTION-->
+       <div class="sidebar d-flex flex-column bg-white">
+        <div class="sidebar-info d-flex align-items-center">
+            <img class="sidebar-info-img" src="../public/img/profile-pic.png" alt="profile picture">
+            <div class="d-flex flex-column">
+                <p class="sidebar-info-name m-0">Andrew<span class="align-middle"></span></p>
+                <p class="sidebar-info-title m-0">Boss</p>
+            </div>
+        </div>
+
+        <div class="sidebar-group">
+            <h3>GIVE FEEDBACK</h3>
+            <a href="../give-feedback-menu/index.html" class="btn-custom-feedback">Click Here</a>
+        </div>
+
+        <div class="sidebar-body">
+            <div class="sidebar-group">
+                <h3>TEAMS</h3>
+                <ul class="list-unstyled">
+                    <li><a href="../teams-results-favourites/index.html">Results </a></li>
+                    <li><a href="../teams-export/index.html">Export results </a></li>
+                    <li><a href="../teams-setting/index.html">Manage teams </a></li>
+                    <li><a href="../teams-create-new/index.html">Create a new team </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>PEOPLE</h3>
+                <ul class="list-unstyled">
+                    <li><a href="../people-results-key-people/index.html">Results </a></li>
+                    <li><a href="../people-export/index.html">Export results </a></li>
+                    <li class="active"><a href="../people-settings/index.html">Manage people</a></li>
+                    <li><a href="../people-invite/index.html">Invite new people </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>ME</h3>
+                <ul class="list-unstyled">
+                    <li><a href="../me-results/index.html">Results </a></li>
+                    <li><a href="../me-my-account/index.html">My account </a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-group">
+                <h3>ADMIN</h3>
+                <ul class="list-unstyled">
+                    <li><a href="../admin-user-register/index.html">User/team register </a></li>
+                    <li><a href="../admin-company-profile/index.html">Company Profile </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+        <!-- RESULTS SECTION -->
+        <div class="people-settings">
+
+            <div class="header">
+                <div class="header-top">
+                    <a class="header-top-small" href="#">Settings</a>
+                    <div class="header-top-logout">
+                        <a href="../people-signin/index.html">Logout
+                            <i class="material-icons align-middle">exit_to_app</i>
+                        </a>
+                    </div>
+                </div>
+                <h2>Manage people's settings</h2>
+                <div class="header-bot">
+
+                    <div class="input-container">
+                        <div class="input">
+                            <i class="material-icons i-1">search</i>
+                            <i class="material-icons i-2">check</i>
+                            <input class="mb-0" type="text" name="search" id="search" placeholder="Peter Schmith" autocomplete="off">
+                            <div class="suggestion-container">
+                                <div class="search-suggestion">
+                                    <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                        <p class="team">John Smith</p>
+                                        <p class="people">Javascript Developer</p>
+                                    </div>
+                                    <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                        <p class="team">Piter Brown</p>
+                                        <p class="people">Python Developer</p>
+                                    </div>
+                                    <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                        <p class="team">John Smith</p>
+                                        <p class="people">Javascript Developer</p>
+                                    </div>
+                                    <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                        <p class="team">Piter Brown</p>
+                                        <p class="people">Python Developer</p>
+                                    </div>
+                                    <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                        <p class="team">Piter Brown</p>
+                                        <p class="people">Python Developer</p>
+                                    </div>
+                                    <div class="search-suggestion-item d-flex flex-column align-items-start justify-content-center">
+                                        <p class="team">John Smith</p>
+                                        <p class="people">Javascript Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="people-settings-body d-flex flex-column">
+               <div class="row h-100">
+                   <!-- PEOPLE WHO GIVE FEEDBACK TO PETER -->
+                   <div class="col-6">
+                       <div class="feedback-from card h-100 card-body bg- white p-0">
+                            <div class="feedback-from-header d-flex justify-content-between">
+                                <h3 class="text-truncate">People who give feedback to Peter</h3>
+                                <a class="align-middle" href="#">Add new</a>
+                            </div>
+                            <div class="feedback-from-body h-100 d-glex flex-column">
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">John Walter</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Every 2nd week</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">Franz Liebcneth</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">Lawyer</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Weekly</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">Rosa Luxemburg</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Once per month</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">John Walter</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Every 2nd week</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">Franz Liebcneth</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">Lawyer</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Weekly</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">Rosa Luxemburg</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Once per month</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">John Walter</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Every 2nd week</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">Franz Liebcneth</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">Lawyer</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Weekly</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">Rosa Luxemburg</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Once per month</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-from-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-from-item-name">John Walter</div>
+                                    <div class="feedback-from-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-from-item-time d-none d-xl-block">Every 2nd week</div>
+                                    <a href="#" class="feedback-from-item-delete text-right">Delete</a>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                   <!-- PEOPLE PETER GIVES FEEDBACK-->
+                   <div class="col-6">
+                    <div class="feedback-to card card-body h-100 bg- white p-0">
+                        <div class="feedback-to-header d-flex justify-content-between">
+                            <h3 class="text-truncate">People to who Peter gives feedback</h3>
+                            <a class="align-middle" href="#">Add new</a>
+                        </div>
+                        <div class="feedback-to-body d-glex flex-column">
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">John Walter</div>
+                                <div class="feedback-to-item-title d-none d-md-block">CEO</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Every 2nd week</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">Franz Liebcneth</div>
+                                <div class="feedback-to-item-title d-none d-md-block">Lawyer</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Weekly</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">Rosa Luxemburg</div>
+                                <div class="feedback-to-item-title d-none d-md-block">CEO</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Once per month</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">John Walter</div>
+                                <div class="feedback-to-item-title d-none d-md-block">CEO</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Every 2nd week</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">Franz Liebcneth</div>
+                                <div class="feedback-to-item-title d-none d-md-block">Lawyer</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Weekly</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">Rosa Luxemburg</div>
+                                <div class="feedback-to-item-title d-none d-md-block">CEO</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Once per month</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">John Walter</div>
+                                <div class="feedback-to-item-title d-none d-md-block">CEO</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Every 2nd week</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">Franz Liebcneth</div>
+                                <div class="feedback-to-item-title d-none d-md-block">Lawyer</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Weekly</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">Rosa Luxemburg</div>
+                                <div class="feedback-to-item-title d-none d-md-block">CEO</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Once per month</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                            <div class="feedback-to-item d-flex justify-content-between align-items-center">
+                                <div class="feedback-to-item-name">John Walter</div>
+                                <div class="feedback-to-item-title d-none d-md-block">CEO</div>
+                                <div class="feedback-to-item-time d-none d-xl-block">Every 2nd week</div>
+                                <a href="#" class="feedback-to-item-delete text-right">Delete</a>
+                            </div>
+                        </div>
+                   </div>
+                   </div>
+               </div>
+               <div class="row my-4">
+                   <!-- BOSSES WHO PETER GIVES FEEDBACK-->
+                    <div class="col-6">
+                        <div class="feedback-boss card card-body h-100 bg- white p-0">
+                            <div class="feedback-boss-header d-flex justify-content-between align-items-center">
+                                <h3 class="text-truncate">Bosses who Peter gives feedback</h3>
+                                <a class="align-middle" href="#">Add new</a>
+                            </div>
+                            <div class="feedback-boss-body d-glex flex-column">
+                                <div class="feedback-boss-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-boss-item-name">John Walter</div>
+                                    <div class="feedback-boss-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-boss-item-time d-none d-xl-block">Every 2nd week</div>
+                                    <a href="#" class="feedback-boss-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-boss-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-boss-item-name">Franz Liebcneth</div>
+                                    <div class="feedback-boss-item-title d-none d-md-block">Lawyer</div>
+                                    <div class="feedback-boss-item-time d-none d-xl-block">Weekly</div>
+                                    <a href="#" class="feedback-boss-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-boss-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-boss-item-name">Rosa Luxemburg</div>
+                                    <div class="feedback-boss-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-boss-item-time d-none d-xl-block">Once per month</div>
+                                    <a href="#" class="feedback-boss-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-boss-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-boss-item-name">John Walter</div>
+                                    <div class="feedback-boss-item-title d-none d-md-block">CEO</div>
+                                    <div class="feedback-boss-item-time d-none d-xl-block">Every 2nd week</div>
+                                    <a href="#" class="feedback-boss-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-boss-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-boss-item-name">Franz Liebcneth</div>
+                                    <div class="feedback-boss-item-title d-none d-md-block">Lawyer</div>
+                                    <div class="feedback-boss-item-time d-none d-xl-block">Weekly</div>
+                                    <a href="#" class="feedback-boss-item-delete text-right">Delete</a>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-6">
+                        <!-- PETER MEMBER OF TEAM-->
+                        <div class="feedback-team card card-body h-100 bg- white p-0">
+                            <div class="feedback-team-header d-flex justify-content-between">
+                                <h3 class="text-truncate">Peter is memeber of team</h3>
+                                <a class="align-middle" href="#">Add new</a>
+                            </div>
+                            <div class="feedback-team-body d-glex flex-column">
+                                <div class="feedback-team-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-team-item-name">Javascript Development</div>
+                                    <div class="feedback-team-item-title d-none d-lg-block">Basic Member</div>
+                                    <p class="d-none d-none d-xl-block">-</p>
+                                    <a href="#" class="feedback-team-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-team-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-team-item-name">Web team</div>
+                                    <div class="feedback-team-item-title d-none d-lg-block">Lead lead</div>
+                                    <p class="d-none d-none d-xl-block">-</p>
+                                    <a href="#" class="feedback-team-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-team-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-team-item-name">Javascript Development</div>
+                                    <div class="feedback-team-item-title d-none d-lg-block">Basic Member</div>
+                                    <p class="d-none d-none d-xl-block">-</p>
+                                    <a href="#" class="feedback-team-item-delete text-right">Delete</a>
+                                </div>
+                                <div class="feedback-team-item d-flex justify-content-between align-items-center">
+                                    <div class="feedback-team-item-name">Web team</div>
+                                    <div class="feedback-team-item-title d-none d-lg-block">Lead lead</div>
+                                    <p class="d-none d-none d-xl-block">-</p>
+                                    <a href="#" class="feedback-team-item-delete text-right">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+                <div class="row">
+                        <div class="col-6">
+                            <!-- ADMIN RIGHTS-->
+                            <div class="feedback-team card card-body h-100 bg- white p-0">
+                                <div class="feedback-team-header d-flex justify-content-between">
+                                    <h3 class="text-truncate">Admin rights to Peter's profile</h3>
+                                    <a class="align-middle" href="#">Add new</a>
+                                </div>
+                                <div class="feedback-team-body d-glex flex-column">
+                                    <div class="feedback-admin-item d-flex justify-content-between align-items-center">
+                                        <div class="feedback-admin-item-name">John Walter</div>
+                                        <div class="feedback-admin-item-title d-none d-md-block">CEO</div>
+                                        <div class="feedback-admin-item-time d-none d-xl-block">Adming rights</div>
+                                        <a href="#" class="feedback-admin-item-delete text-right">Delete</a>
+                                    </div>
+                                    <div class="feedback-admin-item d-flex justify-content-between align-items-center">
+                                        <div class="feedback-admin-item-name">Franz Liebcneth</div>
+                                        <div class="feedback-admin-item-title d-none d-md-block">Lawyer</div>
+                                        <div class="feedback-admin-item-time d-none d-xl-block">View rights only</div>
+                                        <a href="#" class="feedback-admin-item-delete text-right">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="feedback-buttons d-flex align-items-center justify-content-end">
+                            <a href="" class="feedback-buttons-settings d-flex align-items-center justify-content-center"><i class="material-icons">layers</i>Settings log</a>
+                            <a href="" class="feedback-buttons-delete d-flex align-items-center justify-content-center"><i class="material-icons">delete_forever</i> Delete user</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/main.js"></script>
+</body>
+</html>
