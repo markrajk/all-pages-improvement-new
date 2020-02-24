@@ -2865,98 +2865,114 @@ body {
         .teams-create-new-body .team-name input::placeholder, .teams-create-new-body .category input::placeholder {
           color: #000;
           font-size: 1.5rem; }
-      .teams-create-new-body .team-name .input-container, .teams-create-new-body .category .input-container {
-        padding: 0;
-        width: 24rem; }
-        .teams-create-new-body .team-name .input-container .input, .teams-create-new-body .category .input-container .input {
+      .teams-create-new-body .team-name .input, .teams-create-new-body .category .input {
+        position: relative;
+        width: 28rem; }
+        .teams-create-new-body .team-name .input .search-icon, .teams-create-new-body .category .input .search-icon {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          font-size: 3rem;
+          color: #5E636B;
+          transform: translate(-50%, -50%); }
+        .teams-create-new-body .team-name .input .suggestion-container, .teams-create-new-body .category .input .suggestion-container {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          display: none;
+          max-height: 30rem;
+          transform: translate(0, 100%);
+          width: 100%;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          border-top: none; }
+        .teams-create-new-body .team-name .input label, .teams-create-new-body .category .input label {
+          display: block;
+          margin-bottom: 0.9rem;
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: #000000; }
+        .teams-create-new-body .team-name .input input, .teams-create-new-body .category .input input {
+          width: 100%;
+          height: 4.45rem;
+          padding: 1.3rem 1.5rem;
+          margin-bottom: 3.3rem;
+          font-size: 1.5rem;
+          border: solid 1.3px #c3cad9;
+          background-color: #ffffff; }
+          @media (max-width: 991px) {
+            .teams-create-new-body .team-name .input input, .teams-create-new-body .category .input input {
+              width: 100%; } }
+          .teams-create-new-body .team-name .input input:focus, .teams-create-new-body .category .input input:focus {
+            outline: none;
+            border: solid 2px #0077ff; }
+          .teams-create-new-body .team-name .input input:focus ~ .suggestion-container .search-suggestion, .teams-create-new-body .category .input input:focus ~ .suggestion-container .search-suggestion {
+            display: block; }
+          .teams-create-new-body .team-name .input input:focus ~ .suggestion-container, .teams-create-new-body .category .input input:focus ~ .suggestion-container {
+            display: block; }
+          .teams-create-new-body .team-name .input input::placeholder, .teams-create-new-body .category .input input::placeholder {
+            font-size: 1.5rem;
+            color: #000A19; }
+        .teams-create-new-body .team-name .input .search-suggestion, .teams-create-new-body .category .input .search-suggestion {
+          display: none;
+          max-height: 26rem;
           position: relative;
-          z-index: 1000; }
-          .teams-create-new-body .team-name .input-container .input .i-2, .teams-create-new-body .category .input-container .input .i-2 {
-            font-size: 2.5rem;
-            color: #62e872;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translate(-50%, -50%); }
-          .teams-create-new-body .team-name .input-container .input .suggestion-container, .teams-create-new-body .category .input-container .input .suggestion-container {
-            width: 100%;
+          left: 0;
+          top: 0;
+          width: 100%;
+          background-color: #ffffff;
+          transform: translate(0, 0);
+          z-index: 500;
+          overflow: auto; }
+          @media (max-width: 767px) {
+            .teams-create-new-body .team-name .input .search-suggestion, .teams-create-new-body .category .input .search-suggestion {
+              width: 100%; } }
+          .teams-create-new-body .team-name .input .search-suggestion-item, .teams-create-new-body .category .input .search-suggestion-item {
+            height: 5.2rem;
+            padding: 2rem 1.6rem 2.5rem 1.6rem; }
+            .teams-create-new-body .team-name .input .search-suggestion-item:hover, .teams-create-new-body .category .input .search-suggestion-item:hover {
+              color: #fff;
+              background-color: #0077ff; }
+              .teams-create-new-body .team-name .input .search-suggestion-item:hover p, .teams-create-new-body .category .input .search-suggestion-item:hover p {
+                color: #fff; }
+            .teams-create-new-body .team-name .input .search-suggestion-item p, .teams-create-new-body .category .input .search-suggestion-item p {
+              margin: 0; }
+            .teams-create-new-body .team-name .input .search-suggestion-item .team, .teams-create-new-body .category .input .search-suggestion-item .team {
+              padding-top: 5px;
+              margin-bottom: -2px;
+              font-size: 1.4rem;
+              color: #000a19; }
+            .teams-create-new-body .team-name .input .search-suggestion-item .people, .teams-create-new-body .category .input .search-suggestion-item .people {
+              font-size: 1.2rem;
+              color: #5e636b; }
+          .teams-create-new-body .team-name .input .search-suggestion-footer, .teams-create-new-body .category .input .search-suggestion-footer {
             position: absolute;
             bottom: 0;
-            display: none;
-            height: 26rem;
-            transform: translate(0, 100%);
-            width: 100%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            border-top: none;
-            z-index: 100; }
-          .teams-create-new-body .team-name .input-container .input input, .teams-create-new-body .category .input-container .input input {
             width: 100%;
             height: 3.9rem;
-            padding: 0 1.7rem;
-            padding-right: 4rem;
-            margin-bottom: 3.3rem;
-            font-size: 1.5rem;
-            border-radius: 2px;
-            border: solid 1.5px #e4e4e4;
-            background-color: #ffffff;
-            color: #000; }
-            .teams-create-new-body .team-name .input-container .input input:focus, .teams-create-new-body .category .input-container .input input:focus {
-              outline: none;
-              border: solid 2px #0077ff; }
-            .teams-create-new-body .team-name .input-container .input input:focus ~ .suggestion-container .search-suggestion, .teams-create-new-body .category .input-container .input input:focus ~ .suggestion-container .search-suggestion {
-              display: block;
-              z-index: 50; }
-            .teams-create-new-body .team-name .input-container .input input:focus ~ .suggestion-container, .teams-create-new-body .category .input-container .input input:focus ~ .suggestion-container {
-              display: block;
-              z-index: 50; }
-            .teams-create-new-body .team-name .input-container .input input::placeholder, .teams-create-new-body .category .input-container .input input::placeholder {
-              font-size: 1.5rem;
-              color: #000; }
-          .teams-create-new-body .team-name .input-container .input .search-suggestion, .teams-create-new-body .category .input-container .input .search-suggestion {
-            display: none;
-            height: 26rem;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            background-color: #ffffff;
-            transform: translate(0, 0);
-            overflow: auto; }
-            @media (max-width: 767px) {
-              .teams-create-new-body .team-name .input-container .input .search-suggestion, .teams-create-new-body .category .input-container .input .search-suggestion {
-                width: 100%; } }
-            .teams-create-new-body .team-name .input-container .input .search-suggestion-item, .teams-create-new-body .category .input-container .input .search-suggestion-item {
-              height: 5.2rem;
-              padding: 2rem 1.6rem 2.5rem 1.6rem; }
-              .teams-create-new-body .team-name .input-container .input .search-suggestion-item:hover, .teams-create-new-body .category .input-container .input .search-suggestion-item:hover {
-                color: #fff;
-                background-color: #0077ff; }
-                .teams-create-new-body .team-name .input-container .input .search-suggestion-item:hover p, .teams-create-new-body .category .input-container .input .search-suggestion-item:hover p {
-                  color: #fff; }
-              .teams-create-new-body .team-name .input-container .input .search-suggestion-item p, .teams-create-new-body .category .input-container .input .search-suggestion-item p {
-                margin: 0; }
-              .teams-create-new-body .team-name .input-container .input .search-suggestion-item .team, .teams-create-new-body .category .input-container .input .search-suggestion-item .team {
-                padding-top: 5px;
-                margin-bottom: -2px;
-                font-size: 1.4rem;
-                color: #000a19; }
-              .teams-create-new-body .team-name .input-container .input .search-suggestion-item .people, .teams-create-new-body .category .input-container .input .search-suggestion-item .people {
-                font-size: 1.2rem;
-                color: #5e636b; }
+            border-top: solid 1px #f2f2f2;
+            padding-left: 1.6rem;
+            font-size: 1.4rem;
+            color: #000a19;
+            background-color: #fff;
+            transform: translate(0, 100%);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+            .teams-create-new-body .team-name .input .search-suggestion-footer i, .teams-create-new-body .category .input .search-suggestion-footer i {
+              margin-right: 0.8rem; }
+            .teams-create-new-body .team-name .input .search-suggestion-footer a, .teams-create-new-body .category .input .search-suggestion-footer a {
+              margin-left: 0.5rem; }
+    .teams-create-new-body .team-table .spacer {
+      width: 2.6rem; }
     .teams-create-new-body .team-table-member {
-      min-height: 27rem;
       height: 100%;
       max-height: calc(100vh - 53rem);
       overflow-y: auto; }
     .teams-create-new-body .team-table-admin {
-      min-height: 7.6rem;
       height: 100%;
       max-height: calc(100vh - 53rem - 13rem - 6rem);
       overflow-y: auto; }
       .teams-create-new-body .team-table-admin a {
         color: #ff3e3e; }
     .teams-create-new-body .team-table-lead {
-      min-height: 3.6rem;
       height: 100%;
       max-height: 7.6rem;
       overflow-y: auto; }
@@ -2994,7 +3010,8 @@ body {
           letter-spacing: 0.12px;
           color: #1a173b; }
         .teams-create-new-body .team-card-header a {
-          font-size: 1.4rem; }
+          font-size: 1.4rem;
+          font-weight: bold; }
     .teams-create-new-body .card-confirm {
       width: 100%;
       padding: 2.5rem 2rem;
