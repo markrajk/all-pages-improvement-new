@@ -130,6 +130,8 @@ body {
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.06);
   z-index: 1000;
 
+  
+
   &-body {
     max-height: 100vh;
     overflow-y: scroll;
@@ -175,23 +177,10 @@ body {
   }
 
   &-group {
-    padding-top: 4rem;
-
-    @include respond(desktop-xl) {
-      padding-top: 3.5rem;
-    }
-
-    @include respond(desktop-lg) {
-      padding-top: 3rem;
-    }
+    padding-top: 3.5rem;
 
     &:last-of-type {
       margin-bottom: 2rem;
-    }
-
-    &:nth-child(2),
-    &:nth-child(3) {
-      padding-top: 3.5rem;
     }
 
     & .list-unstyled {
@@ -231,10 +220,6 @@ body {
 
           @include respond(desktop-xl) {
             margin-top: 1.3rem;
-          }
-
-          @include respond(desktop-lg) {
-            margin-top: 1.1rem;
           }
         }
 
